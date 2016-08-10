@@ -10,9 +10,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.InputStream;
+import java.util.Random;
 
 public class ingTur extends AppCompatActivity {
     JsonRead jread = new JsonRead();
+
     StringBuilder soru = new StringBuilder();
     StringBuilder cevap = new StringBuilder();
     @Override
@@ -24,7 +26,6 @@ public class ingTur extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         final String value = extras.getString("anahat");
 
-
         final EditText editText = (EditText) findViewById(R.id.editText);
         final TextView textView = (TextView) findViewById(R.id.textView);
 
@@ -32,6 +33,12 @@ public class ingTur extends AppCompatActivity {
 
         soru =jread.Jsonread(value,is, 0,"ing" );
         textView.setText(soru);
+
+        //testing
+        InputStream isx = getResources().openRawResource(R.raw.ujason);
+        InputStream isx1 = getResources().openRawResource(R.raw.ujason);
+        StringBuilder RndData= jread.JsonRandom(isx,isx1,"ing");
+        //end testing
 
         //json dosyasının kaynağını gösteriyoruz.
         Button btn= (Button)findViewById(R.id.button);
