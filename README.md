@@ -9,7 +9,8 @@ Turkish Descrition
 -Ayrıca S4 mini için testleri yapılmış herhangi bir sıkıntısı yoktur.<br>
 [MainActivity Code View](https://github.com/ug-code/dictionary-application-for-Android/blob/master/src/main/java/com/example/uur/dictionaryX/MainActivity.java)
 
-![screenshot]( https://raw.githubusercontent.com/ug-code/dictionary-application-for-Android/master/screenshot/dicMobile.jpg "screenshot")
+![screenshot]( https://raw.githubusercontent.com/ug-code/KelimeEzberle/master/screenshot/sc1.jpg "screenshot1")
+![screenshot]( https://raw.githubusercontent.com/ug-code/KelimeEzberle/master/screenshot/sc2.jpg "screenshot2")
 Uygulama Notları
 -----
 -Uygulama Suan kısa süreliğe vakit ayıramadığım için A harfiyle başlayan inglizce kelimeleri kapsamaktadır.<br>
