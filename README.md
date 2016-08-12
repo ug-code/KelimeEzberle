@@ -17,10 +17,10 @@ Uygulama Notları
 
 Yapılacaklar Listesi
 -----
--En kısa süre Tüm harflerle başlayan kelimeler eklencek.<br>
--istatistik verisi tutulcak.<br>
--sürekli bilinen kelimeler yerine ezberlenmesi güç kelimeler daha sık karşımıza çıkıcak.<br>
--Tüm harflerden rastgele sorular.<br>
--İstatistik yıldızları eklenecek.<br>
--Çözülen sorulardan kaç tane hata yapıldığı.<br>
+- En kısa süre Tüm harflerle başlayan kelimeler eklencek.<br>
+- istatistik verisi tutulcak.<br>
+- sürekli bilinen kelimeler yerine ezberlenmesi güç kelimeler daha sık karşımıza çıkıcak.<br>
+- Tüm harflerden rastgele sorular.<br>
+- İstatistik yıldızları eklenecek.<br>
+- Çözülen sorulardan kaç tane hata yapıldığı.<br>
 Uygulamada için sizin de fikirlerinize açığım.<br>
