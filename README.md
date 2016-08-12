@@ -2,7 +2,7 @@
 # dictionary-application-for-Android
 my first application for android :) 
 
-Turkish Descrition
+Turkish Description
 -----
 -Bu Uygulama İnglizcesi geliştirme isteyenler için Sık kullanılan kelimeler eklenmiştir Soru cevap şeklinde ilerlemektedir -Hobi amaçlı yapılmıştır geliştirmeye açıktır.<br>
 -Uygulama 5554:Nexus_S_API_23 sanal olarak test edilmiştir<br>
@@ -18,7 +18,7 @@ Uygulama Notları
 Yapılacaklar Listesi
 -----
 -En kısa süre Tüm harflerle başlayan kelimeler eklencek. -istatislik verisi tutulcak. -sürekli bilinen kelimeler yerine ezberlenmesi güç kelimeler daha sık karşımıza çıkıcak.<br>
--Tüm harflerden rastgele sorular.
--İstatistik yıldızları eklenecek.
--Çözülen sorulardan kaç tane hata yapıldığı.
+-Tüm harflerden rastgele sorular.<br>
+-İstatistik yıldızları eklenecek.<br>
+-Çözülen sorulardan kaç tane hata yapıldığı.<br>
 Uygulamada için sizinde fikirlerinize açığım.<br>
