@@ -23,4 +23,4 @@ Yapılacaklar Listesi
 -Tüm harflerden rastgele sorular.<br>
 -İstatistik yıldızları eklenecek.<br>
 -Çözülen sorulardan kaç tane hata yapıldığı.<br>
-Uygulamada için sizinde fikirlerinize açığım.<br>
+Uygulamada için sizin de fikirlerinize açığım.<br>
