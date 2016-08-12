@@ -74,6 +74,7 @@ public class ingTur extends AppCompatActivity {
                 }
                 else{
                     FalseCount++;
+
                     //Toast.makeText(getApplicationContext(), Getedittext+" " +cevap+" false",Toast.LENGTH_SHORT).show();
 
                     Toast toast = Toast.makeText(getApplicationContext(),
