@@ -123,7 +123,7 @@ public class HarfSec extends AppCompatActivity implements View.OnClickListener{
 
 
     void İntentCon(String Liste){
-        Intent intent=new Intent(getApplicationContext(),ingTur.class);
+        Intent intent=new Intent(getApplicationContext(),ingturScnk.class);
         intent.putExtra("anahat",Liste);
         startActivity(intent);
     }

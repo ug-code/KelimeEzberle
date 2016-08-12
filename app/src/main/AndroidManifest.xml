@@ -16,7 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HarfSec" />
-        <activity android:name=".ingTur"></activity>
+        <activity android:name=".ingTur" />
+        <activity android:name=".ingturScnk"></activity>
     </application>
 
 </manifest>
