@@ -2,6 +2,7 @@ package com.example.uur.kelimeezberle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.InputStream;
+import java.util.List;
 import java.util.Random;
 
 public class ingTur extends AppCompatActivity {
@@ -21,7 +23,7 @@ public class ingTur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ing_tur);
-
+        final DatabaseHandler db = new DatabaseHandler(this);//database operations
 
         Bundle extras = getIntent().getExtras();
         final String value = extras.getString("anahat");
@@ -71,6 +73,7 @@ public class ingTur extends AppCompatActivity {
                 else if(soru.toString().matches(""))
                 {
                     Toast.makeText(getApplicationContext(), "bitti => "+FalseCount+" tane yanlış "+TrueCount+" doğru var",Toast.LENGTH_SHORT).show();
+
                 }
                 else{
                     FalseCount++;
@@ -82,6 +85,22 @@ public class ingTur extends AppCompatActivity {
                     toast.setGravity(Gravity.CENTER, 0, 0);
                     toast.show();
 
+                    ///////////////////////////////////test/////////////////////////////
+
+                    Log.d("Insert: ", "Ekleniyor ..");
+                    db.addStatistic(new StatisticsTable("1", soru.toString(), cevap.toString(), "Rlist"));
+
+                    // Reading all statistics
+                    Log.d("Reading: ", "Okunuyor");
+                    List<StatisticsTable> statistics = db.getAllStatisticsTable();
+
+                    for (StatisticsTable cn : statistics) {
+                        String log = "Id: " + cn.getID() + " ,JsonID: " + cn.getKey() + " ,Kelime: " + cn.getKelime() + " ,Ceviri: " + cn.getCeviri() + " ,JSONListe: " + cn.getEtiket();
+                        // Writing Contacts to log
+                        Log.d("Name: ", log);
+                    }
+
+                    //////////////////////////////////////////////////////////////////////////
                 }
                 Wordnumber++;
                 editText.setText("");
