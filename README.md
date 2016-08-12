@@ -17,5 +17,7 @@ Uygulama Notları
 Yapılacaklar Listesi
 -----
 -En kısa süre Tüm harflerle başlayan kelimeler eklencek. -istatislik verisi tutulcak. -sürekli bilinen kelimeler yerine ezberlenmesi güç kelimeler daha sık karşımıza çıkıcak.<br>
-
+-Tüm harflerden rastgele sorular.
+-İstatistik yıldızları eklenecek.
+-Çözülen sorulardan kaç tane hata yapıldığı.
 Uygulamada için sizinde fikirlerinize açığım.<br>
