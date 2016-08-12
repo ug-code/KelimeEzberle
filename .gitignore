@@ -86,3 +86,4 @@ build/intermediates/dex-cache/cache.xml
 .gradle/2.10/taskArtifacts/fileSnapshots.bin
 .gradle/2.10/taskArtifacts/fileSnapshots.bin
 *.bin
+*.bin
