@@ -139,9 +139,3 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         return;
     }
-
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> origin/master
