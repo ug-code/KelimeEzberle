@@ -110,3 +110,5 @@ build/intermediates/dex-cache/cache.xml
 .gradle/2.10/taskArtifacts/outputFileStates.bin
 *.lock
 .gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin
+*.lock
+*.bin
