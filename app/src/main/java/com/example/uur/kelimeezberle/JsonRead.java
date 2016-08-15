@@ -52,7 +52,9 @@ public class JsonRead {
             JSONArray list = jsonObject.getJSONArray(RandList);
             JCount=Integer.parseInt(JsonreadCount(RandList,is1,"id").toString());
             //testing
-            JSONObject object = list.getJSONObject(JCount-1);
+            Random rand1 = new Random();
+            int  Randomnumber=rand.nextInt(JCount-1);
+            JSONObject object = list.getJSONObject(Randomnumber);
             String arg = object.getString(data);
             sb.append(arg);
 
