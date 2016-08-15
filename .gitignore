@@ -114,3 +114,6 @@ build/intermediates/dex-cache/cache.xml
 *.bin
 
 dir_to_ignore/.gradle
+dir_to_ignore/.idea
+dir_to_ignore/build
+dir_to_ignore/gradle
