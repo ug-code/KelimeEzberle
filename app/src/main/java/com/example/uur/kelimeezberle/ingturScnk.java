@@ -19,7 +19,7 @@ import java.util.Collections;
 public class ingturScnk extends AppCompatActivity implements View.OnClickListener {
     int Wordnumber = 0, TrueCount = 0, FalseCount = 0;
     JsonRead jread = new JsonRead();
-    StringBuilder ilksoru=new StringBuilder();
+    StringBuilder ilksoru = new StringBuilder();
     StringBuilder soru = new StringBuilder();
     StringBuilder cevap = new StringBuilder();
 
@@ -37,7 +37,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         Bundle extras = getIntent().getExtras();
         value = extras.getString("anahat");
-        animScale = AnimationUtils.loadAnimation(this,R.anim.anim_databtn1);
+        animScale = AnimationUtils.loadAnimation(this, R.anim.anim_databtn1);
         final EditText editText = (EditText) findViewById(R.id.editText);
         textView = (TextView) findViewById(R.id.textView);
 
@@ -64,22 +64,22 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         ilksoru.setLength(0);
         InputStream is = getResources().openRawResource(R.raw.ujason);
         InputStream is1 = getResources().openRawResource(R.raw.ujason);
-        soru = jread.Jsonread(value, is, (Wordnumber+1), "ing");
+        soru = jread.Jsonread(value, is, (Wordnumber + 1), "ing");
         textView.setText(soru);
-        cevap =jread.Jsonread(value,is1, Wordnumber,"tur" );
+        cevap = jread.Jsonread(value, is1, Wordnumber, "tur");
 
         switch (v.getId()) {
             case R.id.button:
                 secenek(value, btn, btn2, btn3, btn4);
                 break;
             case R.id.button2:
-                secenek(value, btn2,btn, btn3, btn4);
+                secenek(value, btn2, btn, btn3, btn4);
                 break;
             case R.id.button3:
-                secenek(value, btn3,btn, btn2 , btn4);
+                secenek(value, btn3, btn, btn2, btn4);
                 break;
             case R.id.button4:
-                secenek(value, btn4,btn, btn2, btn3);
+                secenek(value, btn4, btn, btn2, btn3);
                 break;
         }
         Wordnumber++;
@@ -99,7 +99,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         is6 = getResources().openRawResource(R.raw.ujason);
         //Tanımlar bitiş
         //StringBuilder Şıklar
-        StringBuilder data = jread.Jsonread(value, is, Wordnumber+1, "tur");
+        StringBuilder data = jread.Jsonread(value, is, Wordnumber + 1, "tur");
         StringBuilder RndData = jread.JsonRandom(is1, is2, "tur");
         StringBuilder RndData1 = jread.JsonRandom(is3, is4, "tur");
         StringBuilder RndData2 = jread.JsonRandom(is5, is6, "tur");
@@ -114,7 +114,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         Collections.shuffle(list);
 
         //Rastege Şık bitti
-        if (!soru.toString().matches("") && Databtn1.getText().toString().equals(cevap.toString()) ) {
+        if (!soru.toString().matches("") && Databtn1.getText().toString().equals(cevap.toString())) {
             Databtn1.startAnimation(animScale);
             TrueCount++;
             Toast toast = Toast.makeText(getApplicationContext(),
@@ -139,5 +139,4 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         return;
     }
-
 }
