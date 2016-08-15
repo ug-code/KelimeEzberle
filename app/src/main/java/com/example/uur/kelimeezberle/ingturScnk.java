@@ -1,7 +1,5 @@
 package com.example.uur.kelimeezberle;
 
-import android.graphics.Color;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Gravity;
@@ -16,7 +14,7 @@ import android.widget.Toast;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Random;
+
 
 public class ingturScnk extends AppCompatActivity implements View.OnClickListener {
     int Wordnumber = 0, TrueCount = 0, FalseCount = 0;

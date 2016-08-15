@@ -98,3 +98,9 @@ build/intermediates/dex-cache/cache.xml
 *.lock
 .idea/workspace.xml
 .idea/workspace.xml
+
+*.bin
+*.lock
+.idea/misc.xml
+app/app.iml
+build/intermediates/dex-cache/cache.xml
