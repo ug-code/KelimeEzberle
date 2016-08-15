@@ -1,119 +1,37 @@
-*.class
+# Built application files
+/*/build/
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# Crashlytics configuations
+com_crashlytics_export_strings.xml
 
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-# =========================
-# Operating System Files
-# =========================
-
-# OSX
-# =========================
-
-.DS_Store
-.AppleDouble
-.LSOverride
-
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-# Windows
-# =========================
-
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
-
-# Folder config file
-Desktop.ini
-
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
-
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-<<<<<<< HEAD
-.idea/workspace.xml
-.idea/workspace.xml
-.idea/workspace.xml
-=======
-.gradle/2.10/taskArtifacts/cache.properties.lock
-.gradle/2.10/taskArtifacts/fileHashes.bin
-.gradle/2.10/taskArtifacts/cache.properties.lock
-.gradle/2.10/taskArtifacts/outputFileStates.bin
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock
+# Local configuration file (sdk path, etc)
 local.properties
+
+# Gradle generated files
+.gradle/
+
+# Signing files
+.signing/
+
+# User-specific configurations
+.idea/libraries/
 .idea/workspace.xml
-.idea/misc.xml
-.idea/libraries/appcompat_v7_23_4_0.xml
-.idea/encodings.xml
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock
-.gradle/2.10/taskArtifacts/fileSnapshots.bin
+.idea/tasks.xml
+.idea/.name
 .idea/compiler.xml
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock
-.idea/scopes/scope_settings.xml
-build/intermediates/dex-cache/cache.xml
-.idea/workspace.xml
-.idea/misc.xml
-.idea/libraries/appcompat_v7_23_4_0.xml
+.idea/copyright/profiles_settings.xml
 .idea/encodings.xml
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.bin
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin
-.gradle/2.10/taskArtifacts/fileSnapshots.bin
-.gradle/2.10/taskArtifacts/fileSnapshots.bin
-*.bin
-*.bin
->>>>>>> origin/master
-.idea/workspace.xml
-*.bin
-*.lock
-.idea/workspace.xml
-.idea/workspace.xml
-
-*.bin
-*.lock
 .idea/misc.xml
-app/app.iml
-build/intermediates/dex-cache/cache.xml
-*.lock
-.gradle/2.10/taskArtifacts/fileHashes.bin
-*.bin
-.gradle/2.10/taskArtifacts/outputFileStates.bin
-*.lock
-.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin
-*.lock
-*.bin
+.idea/modules.xml
+.idea/scopes/scope_settings.xml
+.idea/vcs.xml
+*.iml
 
-dir_to_ignore/.gradle
-dir_to_ignore/.idea
-dir_to_ignore/build
-dir_to_ignore/gradle
+# OS-specific files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
