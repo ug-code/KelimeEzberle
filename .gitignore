@@ -80,3 +80,8 @@ obj/
 *.ipr
 *~
 *.swp
+*.lock
+*.bin
+*.iml
+.idea/misc.xml
+.gradle/2.10/taskArtifacts/fileSnapshots.bin

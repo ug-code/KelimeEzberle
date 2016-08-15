@@ -30,12 +30,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //////////////////////////////////////////////////////////dboperations/////////////////////////
+
         DatabaseHandler db = new DatabaseHandler(this);
 
         /**
          * CRUD Operations
          * */
         // Inserting statistics
+        /*
         Log.d("Insert: ", "Ekleniyor ..");
         db.addStatistic(new StatisticsTable("1", "run", "koşmak", "Rlist"));
         db.addStatistic(new StatisticsTable("2", "study", "çalışmak", "SList"));
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
+*/
 
         //////////////////////////////////////////////////////////////////////////////////////////////
 

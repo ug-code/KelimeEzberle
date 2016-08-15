@@ -1,7 +1,7 @@
 {
   "Alist":   [
     {"id": 1 , "ing": "abandon", "tur": "terketmek"},
-    {"id": 2 , "ing": "abandon", "tur": "terketmek"},
+    {"id": 2 , "ing": "abbreviate", "tur": "kısaltmak"},
     {"id": 3 , "ing": "about", "tur": "hakkında"},
     {"id": 4 , "ing": "absolutely","tur": "kesinlikle"},
     {"id": 5 , "ing": "accept", "tur": "kabul etmek"},
