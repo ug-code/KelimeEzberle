@@ -9,13 +9,6 @@
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_4ca9f56eb475aa63aa0c098092b684d560d1b25a\classes.dex" />
     </item>
     <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_d5510696796e67d55806e789a459d7999d45e4b2\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.3"
@@ -23,10 +16,17 @@
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88\classes.dex" />
     </item>
     <item
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_d5510696796e67d55806e789a459d7999d45e4b2\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="0fe714d29edb406510ace95370649b939e2a9abd">
+        sha1="50379c9ee5035a0969d4e3df39b86ea30f8a3a67">
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9ca9bd0e1478aaa122afb7ec979e2d4e2a72bb23\classes.dex" />
     </item>
     <item
@@ -40,7 +40,7 @@
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.3"
-        sha1="9fefb5890bcac5696883f9f709e0c963d3cb2377">
+        sha1="1febfdb8c7ce969f736e1be5f78dd1957ddcdf35">
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0a71e6fcfdd6b1ce33fe6178aebd74d26ed0482b\classes.dex" />
     </item>
     <item
