@@ -104,3 +104,9 @@ build/intermediates/dex-cache/cache.xml
 .idea/misc.xml
 app/app.iml
 build/intermediates/dex-cache/cache.xml
+*.lock
+.gradle/2.10/taskArtifacts/fileHashes.bin
+*.bin
+.gradle/2.10/taskArtifacts/outputFileStates.bin
+*.lock
+.gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin
