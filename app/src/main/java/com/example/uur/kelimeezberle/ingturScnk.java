@@ -137,7 +137,6 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         Databtn3.setText(list.get(2));
         Databtn4.setText(list.get(3));
 
-        return;
     }
 
 }

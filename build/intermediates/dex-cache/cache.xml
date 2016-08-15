@@ -2,60 +2,46 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_4ca9f56eb475aa63aa0c098092b684d560d1b25a\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
+        jar="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="false"
         revision="23.0.3"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_d5510696796e67d55806e789a459d7999d45e4b2\classes.dex" />
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_e72a7a2d8ad9675b26803310eb86ee272619f107.jar" />
     </item>
     <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="0fe714d29edb406510ace95370649b939e2a9abd">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_9ca9bd0e1478aaa122afb7ec979e2d4e2a72bb23\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_9fc13ba07edee2b71ea88b1109d0116d3993392b\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="9fefb5890bcac5696883f9f709e0c963d3cb2377">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_0a71e6fcfdd6b1ce33fe6178aebd74d26ed0482b\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="23.0.3"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_8b44e7a76ba94744231e87a05ff8c66d269791bb\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
+        jar="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="false"
         revision="23.0.3"
         sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_bc3916fdc3863191d6495ece28d5662970777fee\classes.dex" />
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_af93c4897e6c41a208a22a8b39f0d844f1a38a79.jar" />
+    </item>
+    <item
+        jar="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_5bc68078fed21668b7b6d5fe1f8773a778f4cd8d.jar" />
+    </item>
+    <item
+        jar="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_ea31c01af19cccbc696760129d429bfbb9a686c3.jar" />
+    </item>
+    <item
+        jar="C:\Users\muham\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_358810733ff82e12b578a13e606edfbac2ffebc6.jar" />
+    </item>
+    <item
+        jar="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\muham\Documents\GitHub\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_d270ff2d11ae366c7139814d6f232ff08a48ef9a.jar" />
     </item>
 
 </items>
