@@ -112,3 +112,5 @@ build/intermediates/dex-cache/cache.xml
 .gradle/2.10/tasks/_app_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.bin
 *.lock
 *.bin
+
+dir_to_ignore/.gradle
