@@ -85,3 +85,6 @@ obj/
 *.iml
 .idea/misc.xml
 .gradle/2.10/taskArtifacts/fileSnapshots.bin
+*.bin
+*.lock
+.idea/gradle.xml

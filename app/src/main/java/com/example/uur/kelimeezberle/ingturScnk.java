@@ -1,5 +1,9 @@
 package com.example.uur.kelimeezberle;
 
+import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -16,6 +20,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 
 public class ingturScnk extends AppCompatActivity implements View.OnClickListener {
@@ -34,6 +39,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
     TextView textView;
     InputStream is;
     Animation animScale;
+    Drawable test;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +67,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
+        test= btn.getBackground();
         secenek(value, btn, btn2, btn3, btn4,false);
 
     }
@@ -95,8 +102,8 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
     }
 
     //String data1 anahat değerimiz
-    void secenek(String value, Button Databtn1, Button Databtn2, Button Databtn3, Button Databtn4, Boolean arg1) {
-
+    void secenek(String value, final Button Databtn1, Button Databtn2, Button Databtn3, Button Databtn4, Boolean arg1) {
+        Databtn1.setBackgroundDrawable(test);
         //Tanımlar Başlangıçç
         InputStream is, is1, is2, is3, is4, is5, is6;
         is = getResources().openRawResource(R.raw.ujason);
@@ -129,7 +136,25 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         //Rastege Şık bitti
         if (!soru.toString().matches("") && Databtn1.getText().toString().equals(cevap.toString())) {
-            Databtn1.startAnimation(animScale);
+            //Databtn1.startAnimation(animScale);
+            Databtn1.setBackgroundDrawable(getResources().getDrawable(R.drawable.ripple_effect));
+            Databtn1.setBackgroundColor(Color.GREEN);
+            //Databtn1.setBackgroundDrawable(test);
+
+
+          // Databtn1.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);
+
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    //Do something after 100ms
+                    Databtn1.setBackgroundDrawable(test);
+                    handler.postDelayed(this, 1000);
+                }
+            }, 1000);
+
+
             TrueCount++;
             Toast toast = Toast.makeText(getApplicationContext(),
                     " " + cevap + " true ",
@@ -152,6 +177,17 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         } else if (soru.toString().matches("") && ilksoru.toString().matches("")) {
             Toast.makeText(getApplicationContext(), "bitti => " + FalseCount + " tane yanlış " + TrueCount + " doğru var", Toast.LENGTH_SHORT).show();
         } else {
+            Databtn1.setBackgroundColor(Color.RED);
+            final Handler handler = new Handler();
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    //Do something after 100ms
+                    Databtn1.setBackgroundDrawable(test);
+                    handler.postDelayed(this, 1000);
+                }
+            }, 1000);
+
             FalseCount++;
             Toast toast = Toast.makeText(getApplicationContext(),
                     " " + cevap + " false",
@@ -163,7 +199,6 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         Databtn2.setText(list.get(1));
         Databtn3.setText(list.get(2));
         Databtn4.setText(list.get(3));
-
     }
 
 }
