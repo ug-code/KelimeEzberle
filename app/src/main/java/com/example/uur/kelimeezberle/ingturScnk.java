@@ -32,6 +32,7 @@ import java.util.concurrent.TimeUnit;
 
 public class ingturScnk extends AppCompatActivity implements View.OnClickListener {
     int Wordnumber = 0, TrueCount = 0, FalseCount = 0;
+    int FirsQuestion =0;
     StringBuilder Soru1;
     JsonRead jread = new JsonRead();
     StringBuilder ilksoru = new StringBuilder();
@@ -151,7 +152,9 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         //Rastege Şık bitti
         if (!soru.toString().matches("") && Databtn1.getText().toString().equals(cevap.toString())) {
             //Databtn1.startAnimation(animScale);
-            Databtn1.setBackgroundColor(Color.GREEN);
+
+                Databtn1.setBackgroundColor(Color.GREEN);
+
             //Databtn1.setBackgroundDrawable(test);
 
 
@@ -195,7 +198,12 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
             // String TrueValue  = TrueCount;
         } else {
-            Databtn1.setBackgroundColor(Color.RED);
+            if( FirsQuestion > 0) {
+                Databtn1.setBackgroundColor(Color.RED);
+            }
+            FirsQuestion++;
+
+
             final Handler handler = new Handler();
             handler.postDelayed(new Runnable() {
                 @Override

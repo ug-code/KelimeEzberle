@@ -3,6 +3,87 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3a83c15a030071e3224ea74bc3b8aafb38d3baf1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9fc13ba07edee2b71ea88b1109d0116d3993392b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_4ca9f56eb475aa63aa0c098092b684d560d1b25a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_46ac4b34ac37e5a79b0c8c1ce581d90b89da463f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9fc13ba07edee2b71ea88b1109d0116d3993392b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_feba0e59e65bc24b99171d080034746d6f8d3d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_feba0e59e65bc24b99171d080034746d6f8d3d2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3a83c15a030071e3224ea74bc3b8aafb38d3baf1.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\uur\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -12,39 +93,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3a83c15a030071e3224ea74bc3b8aafb38d3baf1.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
         sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_46ac4b34ac37e5a79b0c8c1ce581d90b89da463f.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9fc13ba07edee2b71ea88b1109d0116d3993392b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -66,15 +120,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_4ca9f56eb475aa63aa0c098092b684d560d1b25a.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         optimize="true"
@@ -84,57 +129,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-8.4.0_46ac4b34ac37e5a79b0c8c1ce581d90b89da463f.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_9fc13ba07edee2b71ea88b1109d0116d3993392b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_feba0e59e65bc24b99171d080034746d6f8d3d2b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.3"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_feba0e59e65bc24b99171d080034746d6f8d3d2b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
-        <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-8.4.0_3a83c15a030071e3224ea74bc3b8aafb38d3baf1.jar" />
     </item>
     <item
         is-multidex="false"
