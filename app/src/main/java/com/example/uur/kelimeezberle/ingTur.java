@@ -27,7 +27,6 @@ public class ingTur extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         final String value = extras.getString("anahat");
-
         final EditText editText = (EditText) findViewById(R.id.editText);
         final TextView textView = (TextView) findViewById(R.id.textView);
 
