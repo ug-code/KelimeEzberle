@@ -157,13 +157,6 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
             //Databtn1.startAnimation(blinkAnimation);
             TrueCount++;
             txt_true.setText(String.valueOf(TrueCount));
-            /*
-            Toast toast = Toast.makeText(getApplicationContext()," " + cevap + " true ",Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0, 0);
-            toast.show();
-            */
-
-
         } else if (soru.toString().matches("") && ilksoru.toString().matches("")) {
             finish_status=true;
             Toast.makeText(getApplicationContext(), "bitti => " + FalseCount + " tane yanlış " + TrueCount + " doğru var", Toast.LENGTH_SHORT).show();
@@ -175,22 +168,8 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
             }
             FirsQuestion++;
             FalseCount++;
-            /*
-            Toast toast = Toast.makeText(getApplicationContext()," " + cevap + " false", Toast.LENGTH_SHORT);
-            toast.setGravity(Gravity.CENTER, 0, 0);
-            toast.show();
-            */
         }
 
-        /*final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Databtn1.clearAnimation();
-                handler.postDelayed(this, 100);
-            }
-        }, 1000);
-        */
         if (finish_status==true){
             int[] statistics_intent_result = {Integer.parseInt(JsonCount.toString()), TrueCount, FalseCount};
             Intent intent=new Intent(getApplicationContext(),Statistics.class);
