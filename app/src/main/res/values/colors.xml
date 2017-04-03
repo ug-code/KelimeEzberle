@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#1500020e</color>
+    <color name="colorPrimary">#15455ad8</color>
     <color name="colorPrimaryDark">#0e1a68</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colortext">#100b20</color>
+    <color name="colorhint">#21762b</color>
+    <color name="buton_color">#fff</color>
+    <color name="Harfbg_color">#1d1d1d</color>
 </resources>

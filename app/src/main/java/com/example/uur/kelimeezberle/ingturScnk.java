@@ -2,52 +2,46 @@ package com.example.uur.kelimeezberle;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.appindexing.Thing;
 import com.google.android.gms.common.api.GoogleApiClient;
-
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
-import java.util.concurrent.TimeUnit;
-
 
 public class ingturScnk extends AppCompatActivity implements View.OnClickListener {
     int Wordnumber = 0, TrueCount = 0, FalseCount = 0;
     int FirsQuestion =0;
-    StringBuilder Soru1;
+    StringBuilder JsonCount;
     JsonRead jread = new JsonRead();
     StringBuilder ilksoru = new StringBuilder();
     StringBuilder soru = new StringBuilder();
     StringBuilder cevap = new StringBuilder();
     StringBuilder key = new StringBuilder();
-    final DatabaseHandler db = new DatabaseHandler(this);//database operations
     StringBuilder data;
-
-    String value;
+    String Selected_letter;
     Button btn, btn2, btn3, btn4;
     TextView textView;
-    InputStream is;
+    InputStream is,tv_question_count_is;
     Animation animScale;
-    Drawable test;
+    ArrayList<StringBuilder> list;
+    TextView tv_question_count,txt_true;
+    Boolean finish_status=false;
+    //Android XML Animation
+    Animation blinkAnimation;
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -58,18 +52,23 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingtur_scnk);
-
         Bundle extras = getIntent().getExtras();
-        value = extras.getString("anahat");
+        Selected_letter = extras.getString("anahat");
         animScale = AnimationUtils.loadAnimation(this, R.anim.anim_databtn1);
         final EditText editText = (EditText) findViewById(R.id.editText);
         textView = (TextView) findViewById(R.id.textView);
+        //sağ üsteki textview Sayı için lazım bize
+        txt_true = (TextView) findViewById(R.id.txt_true);
 
+        //sol üsteki textview sayı için lazım bize
+        tv_question_count_is = getResources().openRawResource(R.raw.ujason);
+        tv_question_count = (TextView) findViewById(R.id.tv_question_count);
+        JsonCount= jread.JsonreadCount(Selected_letter,tv_question_count_is,"id");
+        tv_question_count.setText(1+"/"+JsonCount);
+        System.out.println("json Count: "+JsonCount);
         is = getResources().openRawResource(R.raw.ujason);
-
-
-        soru = jread.Jsonread(value, is, 0, "ing");
-        textView.setText(soru);
+        soru = jread.Jsonread(Selected_letter, is, 0, "ing");
+        //textView.setText(soru);
         //soru.setLength(0);
         //Buton tanımlamaları
         btn = (Button) findViewById(R.id.button);
@@ -80,8 +79,8 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         btn2.setOnClickListener(this);
         btn3.setOnClickListener(this);
         btn4.setOnClickListener(this);
-        test = btn.getBackground();
-        secenek(value, btn, btn2, btn3, btn4, false);
+        System.out.println("button Renk: "+btn.getBackground());
+        AnswerOptions(Selected_letter, btn, btn2, btn3, btn4, false);
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -90,36 +89,37 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
-        Soru1 = soru;
         //ilksoru.setLength(0);
+        tv_question_count.setText(Wordnumber+2+"/"+JsonCount);
+
         InputStream is = getResources().openRawResource(R.raw.ujason);
         InputStream is1 = getResources().openRawResource(R.raw.ujason);
         InputStream is2 = getResources().openRawResource(R.raw.ujason);
-        soru = jread.Jsonread(value, is, Wordnumber + 1, "ing");
-        textView.setText(soru);
-        cevap = jread.Jsonread(value, is1, Wordnumber, "tur");
-        key = jread.Jsonread(value, is2, Wordnumber, "id");
+        soru = jread.Jsonread(Selected_letter, is, Wordnumber + 1, "ing");
+        //Aşagıda Tread işleminde kullanılmadıysa açılması lazım.
+        //textView.setText(soru);
+        cevap = jread.Jsonread(Selected_letter, is1, Wordnumber, "tur");
+        key = jread.Jsonread(Selected_letter, is2, Wordnumber, "id");
 
         switch (v.getId()) {
             case R.id.button:
-                secenek(value, btn, btn2, btn3, btn4, true);
+                AnswerOptions(Selected_letter, btn, btn2, btn3, btn4, true);
                 break;
             case R.id.button2:
-                secenek(value, btn2, btn, btn3, btn4, true);
+                AnswerOptions(Selected_letter, btn2, btn, btn3, btn4, true);
                 break;
             case R.id.button3:
-                secenek(value, btn3, btn, btn2, btn4, true);
+                AnswerOptions(Selected_letter, btn3, btn, btn2, btn4, true);
                 break;
             case R.id.button4:
-                secenek(value, btn4, btn, btn2, btn3, true);
+                AnswerOptions(Selected_letter, btn4, btn, btn2, btn3, true);
                 break;
         }
         Wordnumber++;
     }
 
     //String data1 anahat değerimiz
-    void secenek(String value, final Button Databtn1, Button Databtn2, Button Databtn3, Button Databtn4, Boolean arg1) {
-        Databtn1.setBackgroundDrawable(test);
+    void AnswerOptions(String value, final Button Databtn1,final Button Databtn2,final Button Databtn3,final Button Databtn4, Boolean arg1) {
         //Tanımlar Başlangıçç
         InputStream is, is1, is2, is3, is4, is5, is6;
         is = getResources().openRawResource(R.raw.ujason);
@@ -143,7 +143,7 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         //rastgele Şık düzeni başla
         StringBuilder[] Liste = {data, RndData, RndData1, RndData2};
-        ArrayList<StringBuilder> list = new ArrayList<StringBuilder>();
+        list = new ArrayList<StringBuilder>();
         for (int i = 0; i < 4; i++) {
             list.add(Liste[i]);
         }
@@ -151,80 +151,71 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
 
         //Rastege Şık bitti
         if (!soru.toString().matches("") && Databtn1.getText().toString().equals(cevap.toString())) {
-            //Databtn1.startAnimation(animScale);
-
-                Databtn1.setBackgroundColor(Color.GREEN);
-
-            //Databtn1.setBackgroundDrawable(test);
-
-
-            // Databtn1.getBackground().setColorFilter(0xFFFF0000, PorterDuff.Mode.MULTIPLY);
-
-            final Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    //Do something after 100ms
-                    Databtn1.setBackgroundDrawable(test);
-                    handler.postDelayed(this, 1000);
-                }
-            }, 1000);
-
-
+            //Databtn1.setBackgroundColor(Color.GREEN);
+            Databtn1.setBackgroundResource(R.drawable.mytruebutton_radios);
+            //blinkAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.btn_blink);
+            //Databtn1.startAnimation(blinkAnimation);
             TrueCount++;
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    " " + cevap + " true ",
-                    Toast.LENGTH_SHORT);
+            txt_true.setText(String.valueOf(TrueCount));
+            /*
+            Toast toast = Toast.makeText(getApplicationContext()," " + cevap + " true ",Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
-            db.addStatistic(new StatisticsTable(key.toString(), Soru1.toString(), cevap.toString(), value));
-            // Reading all statistics
-            Log.d("Reading: ", "Okunuyor");
-            List<StatisticsTable> statistics = db.getAllStatisticsTable();
+            */
 
-            for (StatisticsTable cn : statistics) {
-                String log = "Id: " + cn.getID() + " ,JsonID: " + cn.getKey() + " ,Kelime: " + cn.getKelime() + " ,Ceviri: " + cn.getCeviri() + " ,JSONListe: " + cn.getEtiket();
-                // Writing Contacts to log
-                Log.d("Name: ", log);
-            }
-
-            //////////////////////////////////////////////////////////////////////////
 
         } else if (soru.toString().matches("") && ilksoru.toString().matches("")) {
+            finish_status=true;
             Toast.makeText(getApplicationContext(), "bitti => " + FalseCount + " tane yanlış " + TrueCount + " doğru var", Toast.LENGTH_SHORT).show();
-            /**
-             * Bunlar sonra kullanılacak;
-             */
 
-            // String TrueValue  = TrueCount;
         } else {
             if( FirsQuestion > 0) {
-                Databtn1.setBackgroundColor(Color.RED);
+                //Databtn1.setBackgroundColor(Color.RED);
+                Databtn1.setBackgroundResource(R.drawable.myfalsebutton_radios);
             }
             FirsQuestion++;
-
-
-            final Handler handler = new Handler();
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    //Do something after 100ms
-                    Databtn1.setBackgroundDrawable(test);
-                    handler.postDelayed(this, 1000);
-                }
-            }, 1000);
-
             FalseCount++;
-            Toast toast = Toast.makeText(getApplicationContext(),
-                    " " + cevap + " false",
-                    Toast.LENGTH_SHORT);
+            /*
+            Toast toast = Toast.makeText(getApplicationContext()," " + cevap + " false", Toast.LENGTH_SHORT);
             toast.setGravity(Gravity.CENTER, 0, 0);
             toast.show();
+            */
         }
-        Databtn1.setText(list.get(0));
-        Databtn2.setText(list.get(1));
-        Databtn3.setText(list.get(2));
-        Databtn4.setText(list.get(3));
+
+        /*final Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Databtn1.clearAnimation();
+                handler.postDelayed(this, 100);
+            }
+        }, 1000);
+        */
+        if (finish_status==true){
+            int[] statistics_intent_result = {Integer.parseInt(JsonCount.toString()), TrueCount, FalseCount};
+            Intent intent=new Intent(getApplicationContext(),Statistics.class);
+            intent.putExtra("Statistics", statistics_intent_result);
+            startActivity(intent);
+        }
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        if(finish_status==false){
+                            Databtn1.setBackgroundResource(R.drawable.mybutton_radios);
+                            textView.setText(soru);
+                            Databtn1.setText(list.get(0));
+                            Databtn2.setText(list.get(1));
+                            Databtn3.setText(list.get(2));
+                            Databtn4.setText(list.get(3));
+                        }
+                    }
+                }, 500);
+            }
+        });
+
     }
 
     void İntentCon(String Liste) {
@@ -232,7 +223,6 @@ public class ingturScnk extends AppCompatActivity implements View.OnClickListene
         intent.putExtra("anahat", Liste);
         startActivity(intent);
     }
-
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.

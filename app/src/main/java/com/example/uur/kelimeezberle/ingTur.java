@@ -23,12 +23,13 @@ public class ingTur extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ing_tur);
-        final DatabaseHandler db = new DatabaseHandler(this);//database operations
+
 
         Bundle extras = getIntent().getExtras();
         final String value = extras.getString("anahat");
         final EditText editText = (EditText) findViewById(R.id.editText);
         final TextView textView = (TextView) findViewById(R.id.textView);
+
 
         InputStream is = getResources().openRawResource(R.raw.ujason);
 
@@ -66,7 +67,7 @@ public class ingTur extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(),
                             Getedittext+" " +cevap+" true ",
                             Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.setGravity(Gravity.BOTTOM,0,0);
                     toast.show();
                 }
                 else if(soru.toString().matches(""))
@@ -82,25 +83,9 @@ public class ingTur extends AppCompatActivity {
                     Toast toast = Toast.makeText(getApplicationContext(),
                             Getedittext+" " +cevap+" false",
                             Toast.LENGTH_SHORT);
-                    toast.setGravity(Gravity.CENTER, 0, 0);
+                    toast.setGravity(Gravity.BOTTOM,0,0);
                     toast.show();
 
-                    ///////////////////////////////////test/////////////////////////////
-
-                    Log.d("Insert: ", "Ekleniyor ..");
-                    db.addStatistic(new StatisticsTable("1", soru.toString(), cevap.toString(), "Rlist"));
-
-                    // Reading all statistics
-                    Log.d("Reading: ", "Okunuyor");
-                    List<StatisticsTable> statistics = db.getAllStatisticsTable();
-
-                    for (StatisticsTable cn : statistics) {
-                        String log = "Id: " + cn.getID() + " ,JsonID: " + cn.getKey() + " ,Kelime: " + cn.getKelime() + " ,Ceviri: " + cn.getCeviri() + " ,JSONListe: " + cn.getEtiket();
-                        // Writing Contacts to log
-                        Log.d("Name: ", log);
-                    }
-
-                    //////////////////////////////////////////////////////////////////////////
                 }
                 Wordnumber++;
                 editText.setText("");

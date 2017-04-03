@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.uur.kelimeezberle.Statistics"
+                android:background="#fff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/img"
+        android:layout_height="200dp">
+        <com.example.uur.kelimeezberle.customfonts.MyTextView
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statistics"
+            android:textColor="#fff"
+            android:textSize="34dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:elevation="1dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/linear"
+        android:layout_marginBottom="20dp"
+        android:visibility="invisible"/>
+
+    <LinearLayout
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="140dp">
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:weightSum="1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/changeRating"
+            android:layout_gravity="center"
+            android:layout_width="230dp"
+            android:src="@drawable/fiverating"
+            android:layout_centerHorizontal="true"
+            android:layout_height="100dp"/>
+        <com.example.uur.kelimeezberle.customfonts.MyTextView
+            android:id="@+id/yourscore"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Your Score is "
+            android:lines="1"
+            android:textSize="24dp"
+            android:textColor="#b8c2bc"
+            android:gravity="center"/>
+        <com.example.uur.kelimeezberle.customfonts.MyTextView
+            android:id="@+id/rightanswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Right Answer :"
+            android:lines="1"
+            android:textSize="24dp"
+            android:textColor="#1be45e"
+            android:gravity="center"/>
+
+        <com.example.uur.kelimeezberle.customfonts.MyTextView
+            android:id="@+id/wronganswer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Wrong Answer :"
+            android:textSize="24dp"
+            android:textColor="#dc1717"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingBottom="21dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp">
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:id="@+id/play_again"
+                android:textSize="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Play Again?"
+                android:textColor="#fff"
+                android:background="#232323"
+                android:padding="10dp"
+                android:gravity="center"
+                android:elevation="1dp"/>
+            <!--android:background="#2b73e1"-->
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

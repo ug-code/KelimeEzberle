@@ -5,11 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 public class HarfSec extends AppCompatActivity implements View.OnClickListener{
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,7 +117,6 @@ public class HarfSec extends AppCompatActivity implements View.OnClickListener{
 
         }
     }
-
 
     void İntentCon(String Liste){
         Intent intent=new Intent(getApplicationContext(),ingturScnk.class);
