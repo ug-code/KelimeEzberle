@@ -3,15 +3,6 @@
 
     <item
         is-multidex="false"
-        jar="E:\android\KelimeEzberle\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="66ed722a1f7ead9112f15135e69df325edd0ff07">
-        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\instant-run_74141d51b080c1e41d565f13f7133c88b9dba4a5.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
@@ -102,21 +93,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
-        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_57391c264618be99ce4847b13b66f3744e0a8bfb.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_6b48bbead723e83d751838c9b6c346b07ec5f66a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-8.4.0_57391c264618be99ce4847b13b66f3744e0a8bfb.jar" />
     </item>
     <item
         is-multidex="false"
@@ -189,15 +180,6 @@
         revision="23.0.3"
         sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
         <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_61548ffda794806fec7bc502bfdbc1e19dfb5c9b.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_6b48bbead723e83d751838c9b6c346b07ec5f66a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -210,6 +192,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_6b48bbead723e83d751838c9b6c346b07ec5f66a.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="E:\android\KelimeEzberle\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="false"
         optimize="true"
@@ -288,15 +279,6 @@
         revision="23.0.3"
         sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
         <dex dex="C:\Users\uur\AndroidStudioProjects\KelimeEzberle\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_e069325ab1bff0a358a7991de9b4531a6988ed88.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\android\KelimeEzberle\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3e67aac13842b9d9c0414f89c051aa6e2d9bbd9c">
-        <dex dex="E:\android\KelimeEzberle\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_e86d5faddf96b9e2efa52cdb947f29ffc80d7fd2.jar" />
     </item>
     <item
         is-multidex="false"

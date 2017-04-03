@@ -53,7 +53,7 @@
             android:id="@+id/changeRating"
             android:layout_gravity="center"
             android:layout_width="230dp"
-            android:src="@drawable/fiverating"
+            android:src="@drawable/star0"
             android:layout_centerHorizontal="true"
             android:layout_height="100dp"/>
         <com.example.uur.kelimeezberle.customfonts.MyTextView
