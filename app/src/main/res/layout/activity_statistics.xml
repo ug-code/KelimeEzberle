@@ -52,10 +52,10 @@
         <ImageView
             android:id="@+id/changeRating"
             android:layout_gravity="center"
-            android:layout_width="230dp"
-            android:src="@drawable/star0"
+            android:layout_width="330dp"
+            android:src="@drawable/star1"
             android:layout_centerHorizontal="true"
-            android:layout_height="100dp"/>
+            android:layout_height="127dp"/>
         <com.example.uur.kelimeezberle.customfonts.MyTextView
             android:id="@+id/yourscore"
             android:layout_width="match_parent"

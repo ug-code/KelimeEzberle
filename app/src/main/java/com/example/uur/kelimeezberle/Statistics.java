@@ -34,7 +34,7 @@ public class Statistics extends AppCompatActivity {
 
         switch ((int) Math.round(percent_correct)) {
             case 0:
-                changeRating.setImageResource(R.drawable.star0);
+                changeRating.setImageResource(R.drawable.star1);
                 break;
             case 1:
                 changeRating.setImageResource(R.drawable.star1);
