@@ -7,28 +7,13 @@
     tools:context="com.example.uur.kelimeezberle.MainActivity">
 
     <Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Ing-Tur"
-    android:id="@+id/btningtur"
-        android:layout_marginTop="79dp"
-    android:textColor="@color/background_floating_material_light"
-    android:background="#bb0a0a"
-        android:layout_marginLeft="45dp"
-        android:layout_marginStart="45dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <Button
-        android:layout_width="wrap_content"
+        android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:text="Tur-Ing"
-        android:id="@+id/btnturing"
+        android:text="Let's play game"
+        android:id="@+id/btningtur"
+        android:layout_marginTop="79dp"
         android:textColor="@color/background_floating_material_light"
         android:background="#bb0a0a"
-        android:layout_marginRight="43dp"
-        android:layout_marginEnd="43dp"
-        android:layout_alignTop="@+id/btningtur"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_marginLeft="100dp"
+        android:textAlignment="center"/>
 </RelativeLayout>
