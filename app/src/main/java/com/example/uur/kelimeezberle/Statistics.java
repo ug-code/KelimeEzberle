@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-
-
 public class Statistics extends AppCompatActivity {
     TextView rightanswer,wronganswer,yourscore;
     Double percent_correct;
@@ -36,17 +33,20 @@ public class Statistics extends AppCompatActivity {
         percent_correct = ((double)Quiz_resutl[1]/(double)Quiz_resutl[0])*5;
 
         switch ((int) Math.round(percent_correct)) {
+            case 0:
+                changeRating.setImageResource(R.drawable.star0);
+                break;
             case 1:
-                changeRating.setImageResource(R.drawable.fiverating);
+                changeRating.setImageResource(R.drawable.star1);
                 break;
             case 2:
-                changeRating.setImageResource(R.drawable.fiverating);
+                changeRating.setImageResource(R.drawable.star2);
                 break;
             case 3:
-                changeRating.setImageResource(R.drawable.fiverating);
+                changeRating.setImageResource(R.drawable.star3);
                 break;
             case 4:
-                changeRating.setImageResource(R.drawable.fiverating);
+                changeRating.setImageResource(R.drawable.star4);
                 break;
             case 5:
                 changeRating.setImageResource(R.drawable.fiverating);
